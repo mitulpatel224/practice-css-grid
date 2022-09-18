@@ -60,7 +60,12 @@ ul {
   overflow: hidden;
 }
 .card .card-option {
+  height: 10px;
+  width: 22px;
+  display: block;
   background-image: url("./images/icon-ellipsis.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* USER-CARD */
@@ -141,6 +146,7 @@ ul {
 }
 
 .card .card-body {
+  cursor: pointer;
   position: relative;
 }
 .card-body .content {
