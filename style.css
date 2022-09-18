@@ -60,7 +60,7 @@ ul {
   overflow: hidden;
 }
 .card .card-option {
-  background-image: url("/images/icon-ellipsis.svg");
+  background-image: url("./images/icon-ellipsis.svg");
 }
 
 /* USER-CARD */
@@ -109,7 +109,7 @@ ul {
 .card .card-header {
   height: 80px;
   background-color: hsl(246, 80%, 60%);
-  background-image: url("/images/icon-play.svg");
+  background-image: url("./images/icon-play.svg");
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: -5px;
@@ -117,27 +117,27 @@ ul {
 
 .card-work .card-header {
   background-color: hsl(15, 100%, 70%);
-  background-image: url("/images/icon-work.svg");
+  background-image: url("./images/icon-work.svg");
 }
 .card-play .card-header {
   background-color: hsl(195, 74%, 62%);
-  background-image: url("/images/icon-play.svg");
+  background-image: url("./images/icon-play.svg");
 }
 .card-study .card-header {
   background-color: hsl(348, 100%, 68%);
-  background-image: url("/images/icon-study.svg");
+  background-image: url("./images/icon-study.svg");
 }
 .card-excercise .card-header {
   background-color: hsl(145, 58%, 55%);
-  background-image: url("/images/icon-exercise.svg");
+  background-image: url("./images/icon-exercise.svg");
 }
 .card-social .card-header {
   background-color: hsl(264, 64%, 52%);
-  background-image: url("/images/icon-social.svg");
+  background-image: url("./images/icon-social.svg");
 }
 .card-selfcare .card-header {
   background-color: hsl(43, 84%, 65%);
-  background-image: url("/images/icon-self-care.svg");
+  background-image: url("./images/icon-self-care.svg");
 }
 
 .card .card-body {
