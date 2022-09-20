@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,159 +16,170 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Time tracking dashboard</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <main class="grid-wrapper">
+    <!-- CONTAINER-CENTER -->
+    <section class="center-container">
+      <!-- CONTAINER-GRID -->
+      <main class="grid-container">
         <div class="card card-user">
-          <div class="card-body">
-            <div class="user-content">
-              <div class="user-image">
+          <!-- USER -->
+          <div class="card-header">
+            <div class="user-detail">
+              <!-- USER PROFILE -->
+              <div class="user-profile">
                 <figure>
-                  <img src="./images/image-jeremy.png" alt="Jeremy Robson" />
+                  <img src="./images/image-jeremy.png" alt="jeremy_robson" />
                 </figure>
               </div>
+              <!-- USERNAME -->
               <div>
                 <p>Report for</p>
                 <h1>Jeremy Robson</h1>
               </div>
             </div>
           </div>
-          <div class="card-footer">
-            <ul>
+          <div class="card-body">
+            <ul class="flex filter">
               <li><a href="#">Daily</a></li>
-              <li><a href="#">Weekly</a></li>
+              <li><a href="#" class="active">Weekly</a></li>
               <li><a href="#">Monthly</a></li>
             </ul>
           </div>
         </div>
+
         <div class="card card-work">
-          <div class="card-header"></div>
+          <div class="card-header card-bg"></div>
           <div class="card-body">
-            <div class="content">
-              <div class="flex flex-row">
-                <h3>Work</h3>
-                <a href="#"><span class="card-option"></span></a>
-              </div>
+            <div class="flex mb-10">
+              <h3>Work</h3>
+              <button class="options"></button>
+            </div>
+            <div class="stats">
               <!-- DAILY -->
-              <h1>5hrs</h1>
-              <h4>Previous - 7hrs</h4>
+              <h2>5hrs</h2>
+              <p>Previous - 7hrs</p>
               <!-- WEEKLY -->
-              <!-- <h1>32hrs</h1>
-              <h4>Previous - 36hrs</h4> -->
+              <!-- <h2>32hrs</h2>
+              <p>Previous - 36hrs</p> -->
               <!-- MONTHLY -->
-              <!-- <h1>103hrs</h1>
-              <h4>Previous - 128hrs</h4> -->
+              <!-- <h2>103hrs</h2>
+              <p>Previous - 128hrs</p> -->
             </div>
           </div>
         </div>
+
         <div class="card card-play">
-          <div class="card-header"></div>
+          <div class="card-header card-bg"></div>
           <div class="card-body">
-            <div class="content">
-              <div class="flex flex-row">
-                <h3>Play</h3>
-                <a href="#"><span class="card-option"></span></a>
-              </div>
+            <div class="flex mb-10">
+              <h3>Play</h3>
+              <button class="options"></button>
+            </div>
+            <div class="stats">
               <!-- DAILY -->
-              <h1>1hr</h1>
-              <h4>Previous - 2hrs</h4>
+              <h2>1hr</h2>
+              <p>Previous - 2hrs</p>
               <!-- WEEKLY -->
-              <!-- <h1>10hrs</h1>
-              <h4>Previous - 8hrs</h4> -->
+              <!-- <h2>10hrs</h2>
+              <p>Previous - 8hrs</p> -->
               <!-- MONTHLY -->
-              <!-- <h1>23hrs</h1>
-              <h4>Previous - 29hrs</h4> -->
+              <!-- <h2>23hrs</h2>
+              <p>Previous - 29hrs</p> -->
             </div>
           </div>
         </div>
+
         <div class="card card-study">
-          <div class="card-header"></div>
+          <div class="card-header card-bg"></div>
           <div class="card-body">
-            <div class="content">
-              <div class="flex flex-row">
-                <h3>Study</h3>
-                <a href="#"><span class="card-option"></span></a>
-              </div>
+            <div class="flex mb-10">
+              <h3>Study</h3>
+              <button class="options"></button>
+            </div>
+            <div class="stats">
               <!-- DAILY -->
-              <h1>0hrs</h1>
-              <h4>Previous - 1hr</h4>
+              <h2>0hrs</h2>
+              <p>Previous - 1hr</p>
               <!-- WEEKLY -->
-              <!-- <h1>4hrs</h1>
-              <h4>Previous - 7hrs</h4> -->
+              <!-- <h2>4hrs</h2>
+              <p>Previous - 7hrs</p> -->
               <!-- MONTHLY -->
-              <!-- <h1>13hrs</h1>
-              <h4>Previous - 19hrs</h4> -->
+              <!-- <h2>13hrs</h2>
+              <p>Previous - 19hrs</p> -->
             </div>
           </div>
         </div>
-        <div class="card card-excercise">
-          <div class="card-header"></div>
+
+        <div class="card card-exercise">
+          <div class="card-header card-bg"></div>
           <div class="card-body">
-            <div class="content">
-              <div class="flex flex-row">
-                <h3>Exercise</h3>
-                <a href="#"><span class="card-option"></span></a>
-              </div>
+            <div class="flex mb-10">
+              <h3>Exercise</h3>
+              <button class="options"></button>
+            </div>
+            <div class="stats">
               <!-- DAILY -->
-              <h1>1hr</h1>
-              <h4>Previous - 1hr</h4>
+              <h2>1hr</h2>
+              <p>Previous - 1hr</p>
               <!-- WEEKLY -->
-              <!-- <h1>4hrs</h1>
-              <h4>Previous - 5hrs</h4> -->
+              <!-- <h2>4hrs</h2>
+              <p>Previous - 5hrs</p> -->
               <!-- MONTHLY -->
-              <!-- <h1>11hrs</h1>
-              <h4>Previous - 18hrs</h4> -->
+              <!-- <h2>11hrs</h2>
+              <p>Previous - 18hrs</p> -->
             </div>
           </div>
         </div>
+
         <div class="card card-social">
-          <div class="card-header"></div>
+          <div class="card-header card-bg"></div>
           <div class="card-body">
-            <div class="content">
-              <div class="flex flex-row">
-                <h3>Social</h3>
-                <a href="#"><span class="card-option"></span></a>
-              </div>
+            <div class="flex mb-10">
+              <h3>Social</h3>
+              <button class="options"></button>
+            </div>
+            <div class="stats">
               <!-- DAILY -->
-              <h1>1hr</h1>
-              <h4>Previous - 3hrs</h4>
+              <h2>1hr</h2>
+              <p>Previous - 3hrs</p>
               <!-- WEEKLY -->
-              <!-- <h1>5hrs</h1>
-              <h4>Previous - 10hrs</h4> -->
+              <!-- <h2>5hrs</h2>
+              <p>Previous - 10hrs</p> -->
               <!-- MONTHLY -->
-              <!-- <h1>21hrs</h1>
-              <h4>Previous - 23hrs</h4> -->
+              <!-- <h2>21hrs</h2>
+              <p>Previous - 23hrs</p> -->
             </div>
           </div>
         </div>
+
         <div class="card card-selfcare">
-          <div class="card-header"></div>
+          <div class="card-header card-bg"></div>
           <div class="card-body">
-            <div class="content">
-              <div class="flex flex-row">
-                <h3>Self Care</h3>
-                <a href="#"><span class="card-option"></span></a>
-              </div>
+            <div class="flex mb-10">
+              <h3>Self Care</h3>
+              <button class="options"></button>
+            </div>
+            <div class="stats">
               <!-- DAILY -->
-              <h1>0hrs</h1>
-              <h4>Previous - 1hr</h4>
+              <h2>0hrs</h2>
+              <p>Previous - 1hr</p>
               <!-- WEEKLY -->
-              <!-- <h1>2hrs</h1>
-              <h4>Previous - 2hrs</h4> -->
+              <!-- <h2>2hrs</h2>
+              <p>Previous - 2hrs</p> -->
               <!-- MONTHLY -->
-              <!-- <h1>7hrs</h1>
-              <h4>Previous - 11hrs</h4> -->
+              <!-- <h2>7hrs</h2>
+              <p>Previous - 11hrs</p> -->
             </div>
           </div>
         </div>
       </main>
+      <!-- CONTAINER-GRID END -->
 
+      <!-- CONTAINER-CENTER END -->
+      <!-- FOOTER -->
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -178,6 +189,7 @@
           >Mitul Patel</a
         >.
       </div>
+      <!-- FOOTER END -->
     </section>
   </body>
 </html>
