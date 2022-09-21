@@ -146,6 +146,7 @@ p {
 .card-user .card-body {
   border-radius: 0;
   padding-top: 60px;
+  margin-top: 0px;
 }
 .card .card-body .filter {
   /* padding: 30px; */
